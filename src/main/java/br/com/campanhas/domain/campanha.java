@@ -19,6 +19,9 @@ public class campanha {
 	@Column(name="dataFim")
 	private Date dataFim;
 	
+	public campanha(String string, int i, Date date, Date date2) {
+		// TODO Auto-generated constructor stub
+	}
 	public String getNome() {
 		return nome;
 	}

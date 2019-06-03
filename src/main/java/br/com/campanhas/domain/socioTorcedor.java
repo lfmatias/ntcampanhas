@@ -1,11 +1,11 @@
-package br.com.campanhas.dao;
+package br.com.campanhas.domain;
 
 import java.util.Date;
 
 import javax.persistence.Entity;
 
 @Entity
-public class socioTorcedorDao {
+public class socioTorcedor {
 
 	private String nomeCompleto;
 	private String email;

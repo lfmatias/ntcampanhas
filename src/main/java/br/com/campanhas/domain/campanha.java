@@ -1,4 +1,4 @@
-package br.com.campanhas.dao;
+package br.com.campanhas.domain;
 
 import java.util.Date;
 
@@ -6,7 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 
 @Entity
-public class campanhaDao {
+public class campanha {
 	@Column(name="nome")
 	private String nome;
 	

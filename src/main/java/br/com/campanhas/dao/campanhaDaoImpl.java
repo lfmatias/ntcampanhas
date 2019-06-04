@@ -5,7 +5,7 @@ import br.com.campanhas.domain.campanha;
 public class campanhaDaoImpl implements campanhaDao {
 
 	@Override
-	public void incluir() {
+	public void incluir(campanhaDao campanha) {
 		// TODO Auto-generated method stub
 		
 	}

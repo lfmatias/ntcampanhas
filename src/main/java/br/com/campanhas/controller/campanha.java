@@ -8,23 +8,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.com.campanhas.dao.campanhaDaoImpl;
+
 @Controller
 @RestController
 @RequestMapping({"/campanha"})
 public class campanha {
 	
-	private campanha campanha;
+	private campanhaDaoImpl campanha;
 	
-	campanha (campanha campanha){
+	campanha (campanhaDaoImpl campanha){
 		this.campanha = campanha;
 	}
 	
 	// metodos crud
 	@PostMapping
 	@RequestMapping(value="/incluir", method = RequestMethod.POST, produces = {MediaType.APPLICATION_JSON_VALUE})
-	public campanha cria(@RequestBody campanha campanha) {
-		//return campanha.save(campanha);
-		return null;
+	public campanha cria(@RequestBody campanhaDaoImpl campanha) {
+		return campanha.incluir(campanha);
 		
 	}
 	

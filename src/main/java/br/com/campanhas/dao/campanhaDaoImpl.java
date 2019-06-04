@@ -5,19 +5,19 @@ import br.com.campanhas.domain.campanha;
 public class campanhaDaoImpl implements campanhaDao {
 
 	@Override
-	public void incluir(campanhaDao campanha) {
+	public void incluir(campanha campanha) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void excluir() {
+	public void excluir(Long id) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public campanha consultar() {
+	public campanha consultar(Long id, String nome) {
 		// TODO Auto-generated method stub
 		return null;
 	}

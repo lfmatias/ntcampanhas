@@ -21,7 +21,7 @@ public class campanha {
 	
 	// metodos crud
 	@PostMapping
-	@RequestMapping(value="/inclui", method = RequestMethod.POST, produces = {MediaType.APPLICATION_JSON_VALUE})
+	@RequestMapping(value="/incluir", method = RequestMethod.POST, produces = {MediaType.APPLICATION_JSON_VALUE})
 	public campanha cria(@RequestBody campanha campanha) {
 		//return campanha.save(campanha);
 		return null;
